@@ -1,0 +1,499 @@
+[<!DOCTYPE html>
+<html>
+<head>
+	<title>WatchShop Women's Section</title>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="Assests/css/style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+</head>
+<body id="home">
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="index.html"><img src="Assests/img/logo.png"/></a>
+			</div>
+			<div id="navbar" class="collapse navbar-collapse">
+				<ul class="nav navbar-nav">
+					<li><a href="index.html">Home</a></li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Men <span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="titan_m.html">Titan</a></li>
+							<li><a href="swatch_m.html">Swatch</a></li>
+							<li><a href="rado_m.html">Rado</a></li>
+							<li><a href="fossil_m.html">Fossil</a></li>
+							<li><a href="mens.html">See All ></a></li>
+						</ul>
+					</li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Women <span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="titan_w.html">Titan</a></li>
+							<li><a href="swatch_w.html">Swatch</a></li>
+							<li><a href="rado_w.html">Rado</a></li>
+							<li><a href="fossil_w.html">Fossil</a></li>
+							<li><a href="womens.html">See All ></a></li>
+						</ul>
+					</li>
+				</ul>
+				<ul class="nav navbar-nav pull-right">
+					<li><a href=""><div id="my-element"></a></div></li>
+					<li><a href="#" data-toggle="modal" data-target="#loginModal">Login</a></li>
+					<li><a href="#" data-toggle="popover" data-placement="bottom" data-content="Your Cart Contains"><i class="fa fa-shopping-cart fa-1x"></i> Cart <span class="badge figure"></span></a></li>
+				</ul>
+			</div><!--/.nav-collapse -->
+		</div>
+	</nav>
+	<aside class="filter-sidebar xl-padding">
+		<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+			<div class="panel panel-default">
+				<div class="panel-heading" role="tab" id="headingOne">
+					<h4 class="panel-title">
+						<a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+							Occasions
+						</a>
+					</h4>
+				</div>
+				<div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+					<div class="panel-body">
+						<div class="ocassions">
+							<ul class="no-bullets">
+								<li><label><input type="radio" checked="checked" rel="all"  name="occasions" /> All</label></li>
+								<li><label><input type="radio" rel="casual" name="occasions" /> Casual</label></li>
+								<li><label><input type="radio" rel="formal" name="occasions" /> Formal</label></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="panel panel-default">
+				<div class="panel-heading" role="tab" id="headingTwo">
+					<h4 class="panel-title">
+						<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+							Price Range
+						</a>
+					</h4>
+				</div>
+				<div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+					<div class="panel-body">
+						<section id="price">
+							<p id="fHeader">Price</p>
+							<label><input type="radio" name="price" rel="p1"/> $200 - $500</label
+								<br/>
+								<label><input type="radio" name="price" rel="p2"/> $500 - $1000</label
+									<br/>
+									<label><input type="radio" name="price" rel="p3"/> $1000 - $1500</label
+										<br/>
+										<label><input type="radio" name="price" rel="p4"/> $1500 - $2000</label
+											<br/>
+											<label><input type="radio" name="price" rel="p5"/> $2000 - $2500</label
+												<br/>
+											</section>
+										</div>
+									</div>
+								</div>
+								<div class="panel panel-default">
+									<div class="panel-heading" role="tab" id="headingThree">
+										<h4 class="panel-title">
+											<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+												Brand
+											</a>
+										</h4>
+									</div>
+									<div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+										<div class="panel-body">
+											<ul class="no-bullets">
+												<li rel="titan">Titan</li>
+												<li rel="fastrack">Swatch</li>
+												<li rel="radp">Rado</li>
+												<li rel="fossil">Fossil</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</aside>
+						<div class="page-wrapper lg-padding" id="watch_shop">
+							<div class="results" id="results">
+								<div class="col-md-3 box all formal p1" >
+									<div class="image-wrap">
+										<div class="hover-wrap">
+											<span class="overlay-img"></span>
+											<span class="overlay-text-thumb">
+												<p>Rado is a Swiss high range manufacturer of watches, with headquarters in Lengnau, Switzerland. It is noted for its use of scratch-proof materials.</p>
+												<h4 class="centralize"><b>$500</b></h4>
+												<button class="md-trigger btn btn-primary" data-modal="modal-5">View</button>
+												<button id="addtocart" class="btn btn-danger">Add To Cart</button>
+											</span>
+										</div>
+										<img src="Assests/img/womenswatch1.jpg" alt="John Doe" class="">
+										<div class="box-content">
+											<div class="box-title">
+											</div>
+											<div class="box-desc centralize">
+												<h4><span>Rado</span>
+													<b class="price">$2500</b></h4>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-3 box all casual" data-price="700">
+										<div class="image-wrap">
+											<div class="hover-wrap">
+												<span class="overlay-img"></span>
+												<span class="overlay-text-thumb">
+													<p>Rado is a Swiss high range manufacturer of watches, with headquarters in Lengnau, Switzerland. It is noted for its use of scratch-proof materials.</p>
+													<h4 class="centralize"><b class="price">$2500</b></h4>
+													<button class="md-trigger btn btn-primary" data-modal="modal-5">View</button>
+													<button id="addtocart" class="btn btn-danger">Add To Cart</button>
+												</span>
+											</div>
+											<img src="Assests/img/womenswatch2.jpg" alt="John Doe" class="">
+											<div class="box-content">
+												<div class="box-title">
+												</div>
+												<div class="box-desc centralize">
+													<h4><span>Rado</span>
+														<b>$700</b></h4>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-md-3 box all formal" data-price="1000">
+											<div class="image-wrap">
+												<div class="hover-wrap">
+													<span class="overlay-img"></span>
+													<span class="overlay-text-thumb">
+														<p>Swatch is a Swiss high range manufacturer of watches, with headquarters in Lengnau, Switzerland. It is noted for its use of scratch-proof materials.</p>
+														<h4 class="centralize"><b class="price">$2500</b></h4>
+														<button class="md-trigger btn btn-primary" data-modal="modal-5">View</button>
+														<button id="addtocart" class="btn btn-danger">Add To Cart</button>
+													</span>
+												</div>
+												<img src="Assests/img/womenswatch3.jpg" alt="John Doe" class="">
+												<div class="box-content">
+													<div class="box-title">
+													</div>
+													<div class="box-desc centralize">
+														<h4><span>Swatch</span>
+															<b>$1000</b></h4>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="col-md-3 box all formal">
+												<div class="image-wrap">
+													<div class="hover-wrap">
+														<span class="overlay-img"></span>
+														<span class="overlay-text-thumb">
+															<p>Swatch is a Swiss high range manufacturer of watches, with headquarters in Lengnau, Switzerland. It is noted for its use of scratch-proof materials.</p>
+															<h4 class="centralize"><b class="price">$2500</b></h4>
+															<button class="md-trigger btn btn-primary" data-modal="modal-5">View</button>
+															<button id="addtocart" class="btn btn-danger">Add To Cart</button>
+														</span>
+													</div>
+													<img src="Assests/img/womenswatch4.jpg" alt="John Doe" class="">
+													<div class="box-content">
+														<div class="box-title">
+														</div>
+														<div class="box-desc centralize">
+															<h4><span>Swatch</span>
+																<b class="price">$2500</b></h4>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="col-md-3 box all formal">
+													<div class="image-wrap">
+														<div class="hover-wrap">
+															<span class="overlay-img"></span>
+															<span class="overlay-text-thumb">
+																<p>Fossil is a Swiss high range manufacturer of watches, with headquarters in Lengnau, Switzerland. It is noted for its use of scratch-proof materials.</p>
+																<h4 class="centralize"><b class="price">$2500</b></h4>
+																<button class="md-trigger btn btn-primary" data-modal="modal-5">View</button>
+																<button id="addtocart" class="btn btn-danger">Add To Cart</button>
+															</span>
+														</div>
+														<img src="Assests/img/womenswatch5.jpg" alt="John Doe" class="">
+														<div class="box-content">
+															<div class="box-title">
+															</div>
+															<div class="box-desc centralize">
+																<h4><span>Fossil</span>
+																	<b class="price">$2500</b></h4>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="col-md-3 box all casual">
+														<div class="image-wrap">
+															<div class="hover-wrap">
+																<span class="overlay-img"></span>
+																<span class="overlay-text-thumb">
+																	<p>Fossil is a Swiss high range manufacturer of watches, with headquarters in Lengnau, Switzerland. It is noted for its use of scratch-proof materials.</p>
+																	<h4 class="centralize"><b class="price">$2500</b></h4>
+																	<button class="md-trigger btn btn-primary" data-modal="modal-5">View</button>
+																	<button id="addtocart" class="btn btn-danger">Add To Cart</button>
+																</span>
+															</div>
+															<img src="Assests/img/womenswatch6.jpg" alt="John Doe" class="">
+															<div class="box-content">
+																<div class="box-title">
+																</div>
+																<div class="box-desc centralize">
+																	<h4><span>Fossil</span>
+																		<b class="price">$2500</b></h4>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="col-md-3 box all formal">
+															<div class="image-wrap">
+																<div class="hover-wrap">
+																	<span class="overlay-img"></span>
+																	<span class="overlay-text-thumb">
+																		<p>Titan is a Swiss high range manufacturer of watches, with headquarters in Lengnau, Switzerland. It is noted for its use of scratch-proof materials.</p>
+																		<h4 class="centralize"><b class="price">$2500</b></h4>
+																		<button class="md-trigger btn btn-primary" data-modal="modal-5">View</button>
+																		<button id="addtocart" class="btn btn-danger">Add To Cart</button>
+																	</span>
+																</div>
+																<img src="Assests/img/womenswatch7.jpg" alt="John Doe" class="">
+																<div class="box-content">
+																	<div class="box-title">
+																	</div>
+																	<div class="box-desc centralize">
+																		<h4><span>Titan</span>
+																			<b class="price">$2500</b></h4>
+																		</div>
+																	</div>
+																</div>
+															</div>
+															<div class="col-md-3 box all formal">
+																<div class="image-wrap">
+																	<div class="hover-wrap">
+																		<span class="overlay-img"></span>
+																		<span class="overlay-text-thumb">
+																			<p>Titan is a Swiss high range manufacturer of watches, with headquarters in Lengnau, Switzerland. It is noted for its use of scratch-proof materials.</p>
+																			<h4 class="centralize"><b class="price">$2500</b></h4>
+																			<button class="md-trigger btn btn-primary" data-modal="modal-5">View</button>
+																			<button id="addtocart" class="btn btn-danger">Add To Cart</button>
+																		</span>
+																	</div>
+																	<img src="Assests/img/womenswatch8.jpg" alt="John Doe" class="">
+																	<div class="box-content">
+																		<div class="box-title">
+																		</div>
+																		<div class="box-desc centralize">
+																			<h4><span>Titan</span>
+																				<b class="price">$2500</b></h4>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<!-- /. page wrapper -->
+														<footer id="footer-pages">
+															<div class="container">
+																<div class="row">
+																	<div class="col-lg-5 col-md-5 col-sm-5 col-xs-12">
+																		<div class="copyright wow fadeInUp animated">
+																			<p style="margin-left: 150px;">Copyright &copy; 2015 Watch Shop | All rights reserved.</p>
+																		</div>
+																	</div>
+																	<div class="col-lg-2 col-md-2 col-sm-2 col-xs-12">
+																		<div class="text-center wow fadeInUp animated">
+																			<a href="#home"><i class="fa fa-chevron-circle-up fa-2x"></i></a>
+																		</div>
+																	</div>
+																	<div class="col-lg-5 col-md-5 col-sm-5 col-xs-12">
+																		<p class="wow fadeInUp animated pull-right" style="margin-right: 0px;">Developed & Designed By - <a href="#">Anita Nair</a></p>
+																	</div>
+																</div>
+															</div>
+														</footer>
+														<!-- MOdal Section -->
+														<div class="md-modal md-effect-5" id="modal-5">
+															<div class="md-content">
+																<h3>Excellent Choice..!!</h3>
+																<div>
+																	<div class="row">
+																		<div class="col-md-6">
+																			<img src="Assests/img/view_watch.gif" width="200" height="250">
+																		</div>
+																		<div class="col-md-6">
+																			<article>Today the company produces about half a million watches a year with a staff of about 470 in total. Rado's watches are obtainable in more than 150 countries, at over 5900 points of sale. The most important markets are Southeast Asia, Japan, China, India, Middle East as well as countries within Europe (Switzerland, Germany, Italy) and the USA.</article>
+																			<form class="form-horizontal">
+																				<div class="form-group" align="center">
+																					<label >Quantity</label>
+																					<input type="number"/>
+																				</div>
+																				<div class="form-group">
+																					<button class="btn btn-success" id="">Add to Cart</button>
+																				</div>
+																			</form>
+																		</div>
+																	</div>
+																	<button class="md-close btn btn-danger">Close me!</button>
+																</div>
+															</div>
+														</div>
+														<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel">
+															<div id="login-overlay" class="modal-dialog">
+																<div class="modal-content">
+																	<div class="modal-header">
+																		<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">X</span><span class="sr-only">Close</span></button>
+																		<h4 class="modal-title" id="myModalLabel">Login to watchshop.com</h4>
+																	</div>
+																	<div class="modal-body">
+																		<div class="row">
+																			<div class="col-xs-6">
+																				<div class="well">
+																					<form id="loginForm" method="POST" action="/login/" novalidate="novalidate">
+																						<div class="form-group">
+																							<label for="username" class="control-label">Username</label>
+																							<input type="text" class="form-control" id="username" name="username" value="" required="" title="Please enter you username" placeholder="example@gmail.com">
+																							<span class="help-block"></span>
+																						</div>
+																						<div class="form-group">
+																							<label for="password" class="control-label">Password</label>
+																							<input type="password" class="form-control" id="password" name="password" value="" required="" title="Please enter your password">
+																							<span class="help-block"></span>
+																						</div>
+																						<div id="loginErrorMsg" class="alert alert-error hide">Wrong username og password</div>
+																						<div class="checkbox">
+																							<label>
+																								<input type="checkbox" name="remember" id="remember"> Remember login
+																							</label>
+																							<p class="help-block">(if this is a private computer)</p>
+																						</div>
+																						<button type="submit" class="btn btn-success btn-block">Login</button>
+																						<a href="/forgot/" class="btn btn-default btn-block">Help to login</a>
+																					</form>
+																				</div>
+																			</div>
+																			<div class="col-xs-6">
+																				<p class="lead">Register now for <span class="text-success">FREE</span></p>
+																				<ul class="list-unstyled" style="line-height: 2">
+																					<li><span class="fa fa-check text-success"></span> See all your orders</li>
+																					<li><span class="fa fa-check text-success"></span> Fast re-order</li>
+																					<li><span class="fa fa-check text-success"></span> Save your favorites</li>
+																					<li><span class="fa fa-check text-success"></span> Fast checkout</li>
+																					<li><span class="fa fa-check text-success"></span> Get a gift <small>(only new customers)</small></li>
+																				</ul>
+																				<p><a href="#" data-toggle="modal" data-target="#registerModal" class="btn btn-info btn-block">Yes please, register now!</a></p>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="modal fade" id="registerModal" tabindex="-1" role="dialog" aria-labelledby="registerModalLabel">
+															<div id="login-overlay" class="modal-dialog">
+																<div class="modal-content">
+																	<div class="modal-header">
+																		<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">X</span><span class="sr-only">Close</span></button>
+																		<h4 class="modal-title" id="myModalLabel">Register to watchshop.com</h4>
+																	</div>
+																	<div class="modal-body">
+																		<div id="emptyDiv"></div>
+																		<div id="description"></div>
+																		<!--container start-->
+																		<div id="container">
+																			<div id="container_body">
+																				<!--Form  start-->
+																				<div id="form_name">
+																					<form name="form" >
+																						<div id="errorBox" style="color:#ff0000"></div>
+																						<div id="successBox" style="color:#00c136"></div>
+																						<div class="firstnameorlastname form-group">
+																							<input type="text" name="Name" value="" placeholder="First Name"  class="input_name form-control" >
+																						</div>
+																						<div class="form-group">
+																							<input type="text" name="LastName" value="" placeholder="Last Name" class="input_name form-control" >
+																						</div>
+																						<div id="email_form" class="form-group">
+																							<input type="text" name="Email" value=""  placeholder="Your Email" class="input_email form-control">
+																						</div>
+																						<div id="Re_email_form" class="form-group">
+																							<input type="text" name="enterEmail" value=""  placeholder="Re-enter Email" class="input_Re_email form-control">
+																						</div>
+																						<div id="password_form" class="form-group">
+																							<input type="password" name="Password" value=""  placeholder="New Password" class="input_password form-control">
+																						</div>
+																						<div id="radio_button" class="form-group">
+																							<input type="radio" name="radiobutton" value="Female">
+																							<label >Female</label>
+																							&nbsp;&nbsp;&nbsp;
+																							<input type="radio" name="radiobutton" value="Male">
+																							<label >Male</label>
+																						</div>
+																						<div class="form-group">
+																							<p id="sign_user" onClick="Submit()" class="btn btn-primary">Sign Up </p>
+																						</div>
+																					</form>
+																				</div>
+																				<!--form ends-->
+																			</div>
+																		</div>
+																		<!--container ends-->
+																	</div>
+																</div>
+															</div>
+														</div>
+														<!-- End of Modal Section -->
+														<!-- Latest compiled and minified JavaScript -->
+														<script type="text/javascript">
+															$('div.ocassions').delegate('input[type=radio]', 'change', update);
+															update();
+															function update() {
+																var $lis = $('.results > div'),
+																$checked = $('input:checked');
+																if ($checked.length) {
+																	var selector = $checked.map(function () {
+																		return '.' + $(this).attr('rel');
+																	}).get().join('');
+																	$lis.hide().filter(selector).show();
+																} else {
+																	$lis.show();
+																}
+															}
+														</script>
+														<script type="text/javascript">
+															$('#addtocart').click(function() {
+																$('.figure').html(function(i, val) { return val*1+1 });
+															});
+														</script>
+														<script>
+															$(document).ready(function(){
+																$('[data-toggle="popover"]').popover();   
+															});
+														</script>
+														<script src="Assests/js/classie.js"></script>
+														<script src="Assests/js/modalEffects.js"></script>
+														<!-- On hover dropdown -->
+														<script type="text/javascript">
+															$('ul.nav li.dropdown').hover(function() {
+																$(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn(500);
+															}, function() {
+																$(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(500);
+															});
+														</script>
+														<script type="text/javascript" src="Assests/Curry/curry.js"></script>
+														<script type="text/javascript">
+$(function(){ // document ready alias
+$('#my-element').curry(); // init curry
+});
+</script>
+</body>
+</html>

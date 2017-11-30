@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>WatchShop - Online Watches</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="Assests/css/style.css">
+	<link rel="stylesheet" href="Assests/Owl/owl.carousel.css">
+	<link rel="stylesheet" href="Assests/Owl/owl.theme.css">
+	<link rel="stylesheet" type="text/css" href="http://www.jeasyui.com/easyui/themes/default/easyui.css">
+	<link rel="stylesheet" type="text/css" href="http://www.jeasyui.com/easyui/themes/icon.css">
+	<link rel="stylesheet" type="text/css" href="http://www.jeasyui.com/easyui/demo/demo.css">
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script type="text/javascript" src="http://www.jeasyui.com/easyui/jquery.easyui.min.js"></script>
+	<style>
+		#map {
+			width: auto;
+			height: 400px;
+		}
+	</style>
+</head>
+<body id="home">
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="index.html"><img src="Assests/img/logo.png"/></a>
+			</div>
+			<div id="navbar" class="collapse navbar-collapse">
+				<ul class="nav navbar-nav">
+					<li class="active"><a href="#">Home</a></li>
+					<li class="dropdown">
+						<a href="mens.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Men <span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="titan_m.html">Titan</a></li>
+							<li><a href="swatch_m.html">Swatch</a></li>
+							<li><a href="rado_m.html">Rado</a></li>
+							<li><a href="fossil_m.html">Fossil</a></li>
+							<li><a href="mens.html">See All ></a></li>
+						</ul>
+					</li>
+					<li class="dropdown">
+						<a href="womens.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Women <span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="titan_w.html">Titan</a></li>
+							<li><a href="swatch_w.html">Swatch</a></li>
+							<li><a href="rado_w.html">Rado</a></li>
+							<li><a href="fossil_w.html">Fossil</a></li>
+							<li><a href="womens.html">See All ></a></li>
+						</ul>
+					</li>
+				</ul>
+				<ul class="nav navbar-nav pull-right">
+					<li><a href=""><div id="my-element"></a></div></li>
+					<li><a href="#" data-toggle="modal" data-target="#loginModal">Login</a></li>
+					<li><a href="#"><i class="fa fa-shopping-cart fa-1x"></i>Cart <span class="badge figure"></span></a></li>
+				</ul>
+			</div><!--/.nav-collapse -->
+		</div>
+	</nav>
+	<div class="container lg-padding">
+		<div class="row lg-padding" id="watch_shop">
+			<div class="col-md-3 box">
+				<div class="image-wrap">
+					<div class="hover-wrap">
+						<span class="overlay-img"></span>
+						<span class="overlay-text-thumb">
+							<p>Rado is a Swiss high range manufacturer of watches, with headquarters in Lengnau, Switzerland. It is noted for its use of scratch-proof materials.</p>
+							<h4 class="centralize"><b class="price">$2500</b></h4>
+							<button class="md-trigger btn btn-primary" data-modal="modal-5">View</button>
+						</span>
+					</div>
+					<img src="Assests/img/watch1.jpg" alt="John Doe" class="">
+					<div class="box-content">
+						<div class="box-title">
+						</div>
+						<div class="box-desc centralize">
+							<h4><span>Rado</span>
+								<b class="price">$2500</b></h4>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 box">
+					<div class="image-wrap">
+						<div class="hover-wrap">
+							<span class="overlay-img"></span>
+							<span class="overlay-text-thumb">
+								<p>Swatch is a Swiss high range manufacturer of watches, with headquarters in Lengnau, Switzerland. It is noted for its use of scratch-proof materials.</p>
+								<h4 class="centralize"><b class="price">$2500</b></h4>
+								<button class="md-trigger btn btn-primary" data-modal="modal-5">View</button>
+							</span>
+						</div>
+						<img src="Assests/img/watch2.jpg" alt="John Doe" class="">
+						<div class="box-content">
+							<div class="box-title">
+							</div>
+							<div class="box-desc centralize">
+								<h4><span>Swatch</span>
+									<b class="price">$2500</b></h4>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3 box">
+						<div class="image-wrap">
+							<div class="hover-wrap">
+								<span class="overlay-img"></span>
+								<span class="overlay-text-thumb">
+									<p>Fossil is a Swiss high range manufacturer of watches, with headquarters in Lengnau, Switzerland. It is noted for its use of scratch-proof materials.</p>
+									<h4 class="centralize"><b class="price">$2500</b></h4>
+									<button class="md-trigger btn btn-primary" data-modal="modal-5">View</button>
+								</span>
+							</div>
+							<img src="Assests/img/watch3.jpg" alt="John Doe" class="">
+							<div class="box-content">
+								<div class="box-title">
+								</div>
+								<div class="box-desc centralize">
+									<h4><span>Fossil</span>
+										<b class="price">$2500</b></h4>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3 box">
+							<div class="image-wrap">
+								<div class="hover-wrap">
+									<span class="overlay-img"></span>
+									<span class="overlay-text-thumb">
+										<p>Titan is a Swiss high range manufacturer of watches, with headquarters in Lengnau, Switzerland. It is noted for its use of scratch-proof materials.</p>
+										<h4 class="centralize"><b class="price">$2500</b></h4>
+										<button class="md-trigger btn btn-primary" data-modal="modal-5">View</button>
+									</span>
+								</div>
+								<img src="Assests/img/watch4.jpg" alt="John Doe" class="">
+								<div class="box-content">
+									<div class="box-title">
+									</div>
+									<div class="box-desc centralize">
+										<h4><span>Titan</span>
+											<b class="price">$2500</b></h4>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div><!-- /.container -->
+					<section id="slider">
+						<div class="container">
+							<div class="row lg-padding">
+								<div class="small-padding"></div>
+								<div class="box centralize">
+									<div class="col-md-6 col-sm-6">
+										<div class="wow bounceInLeft animated">
+											<div class="small-padding"></div>
+											<div id="owl-demo" class="owl-carousel owl-theme">
+												<div class="item"><img src="Assests/img/slide1.jpg" alt="The Last of us"></div>
+												<div class="item"><img src="Assests/img/slide2.jpg" alt="GTA V"></div>
+												<div class="item"><img src="Assests/img/slide3.jpg" alt="Mirror Edge"></div>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-6 col-sm-6">
+										<div class="box-desc" style="color:#FFF;">
+											<h3>About Watch Shop</h3>
+											<p>A watch is a small timepiece intended to be carried or worn by a person. It is designed to keep working despite the motions caused by the person's activities. A wristwatch is designed to be worn on a wrist, attached by a watch strap or other type of bracelet. A pocket watch is designed for a person to carry in a pocket.</p>
+											<p>Watches evolved in the 17th century from spring-powered clocks, which appeared as early as the 14th century. The first watches were strictly mechanical, driven by clockwork. As technology progressed, mechanical devices, used to control the speed of the watch, were largely superseded by vibrating quartz crystals that produce accurately timed electronic pulses. Some watches use radio clock technology to regularly correct the time. The first digital electronic watch was developed in 1970.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+					<section class="contact section-padding" id="contact">
+						<div class="container">
+							<div class="row centralize">
+								<div class="section-title wow fadeInDown animated">
+									<h1>Contact <span>Us</span></h1>
+									<div class="section-subtitle">
+										<p>You can contact us using the below Contact Form for Product & Service related feedbacks.</p>
+									</div>
+								</div>
+							</div>
+							<div class="lg-padding"></div>
+							<div class="row">
+							<form id="ff" action="contact.php" method="post">
+						<div class="col-md-12 box">
+							<div class="col-md-6 box">
+							       
+								<div class="input-group">
+					            	<span class="input-group-addon"><i class="fa fa-user"></i></span>
+					            	<input type="text" name="Name" id="name" class="form-control" placeholder="Your name" required>
+					            </div>
+					        </div>
+					            <div class="col-md-6 box">
+					            	<div class="input-group">
+					              		<span class="input-group-addon"><i class="fa fa-envelope-o"></i></span>
+					              		<input type="email" name="Email" id="email" class="form-control" placeholder="Email" required>
+					            	</div>
+					        	</div>
+					        </div>
+					        <div class="col-md-12 box">
+					    		<div class="input-group">
+					            	<span class="input-group-addon"><i class="fa fa-fire"></i></span>
+					            	<input type="text" name="Subject" id="subject" class="form-control" placeholder="Subject" required>
+					        	</div>
+					        	<div class="input-group">
+					            	<span class="input-group-addon"><i class="fa fa-comments"></i></span>
+					        		<textarea name="Message" id="message" class="form-control large" placeholder="Message" required></textarea>
+					        	</div>
+				           	 	<button type="submit" class="btn btn-blue" id="submit_btn" style="width: 300px"><i class="fa fa-send"></i> Send</button>
+				            	<button type="reset" class="btn btn-blue" style="width: 300px"><i class="fa fa-times"></i> Reset</button>
+					   		</div>
+					   	</div>
+					</form>
+							<br>
+							<div class="store-info">
+								<style>
+									table,th,td {
+										border : 1px solid black;
+										border-collapse: collapse;
+									}
+									th,td {
+										padding: 5px;
+									}
+								</style>
+								<div class="row">
+									<div class="col-md-4 box"></div>
+									<div class="col-md-8 box">
+										<button type="button" onclick="loadDoc()" class="btn btn-blue">Get Store Information</button>
+										<br><br>
+									</div>
+									<div class="col-md-4 box"></div>
+									<table id="demo" style="width:75%" align="center"></table>
+								</div>
+							</div>
+							<br/><div class="row">
+							<div class="col-sm-6 col-md-6">
+								<div class="box address">
+									<div class="box-title">
+										<h2>Contact Info</h2>
+									</div>
+									<div class="box-desc">
+										<ul class="no-bullets">
+											<li>
+												<p><b>Phone</b> :  +91-9898989898</p>
+											</li>
+											<li>
+												<p><b>Email</b> :  abc@xyz.com</p>
+											</li>
+											<li>
+												<p><b>Address</b> :  H. No. 56, Olive Street, India</p>
+											</li>
+										</ul>
+									</div>
+									<div class="small-padding"></div>
+									<div class="box-title">
+										<h2>Follow Us</h2>
+									</div>
+									<div class="box-desc">
+										<ul class="no-bullets social-icon">
+											<li><a href="http://www.facebook.com" target="_blank"><i class="fa fa-facebook"></i></a></li>
+											<li><a href="http://www.twitter.com" target="_blank"><i class="fa fa-twitter"></i></a></li>
+											<li><a href="http://www.linkedin.com" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+											<li><a href="http://plus.google.com" target="_blank"><i class="fa fa-google-plus"></i></a></li>
+											<li><a href="http://www.youtube.com" target="_blank"><i class="fa fa-youtube"></i></a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div id="map"></div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<!-- End of Contact -->
+				<footer id="footer">
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-5 col-md-5 col-sm-5 col-xs-12">
+								<div class="copyright">
+									<p>Copyright &copy; 2015 Watch Shop | All rights reserved.</p>
+								</div>
+							</div>
+							<div class="col-lg-2 col-md-2 col-sm-2 col-xs-12">
+								<div class="text-center">
+									<a href="#home"><i class="fa fa-chevron-circle-up fa-2x"></i></a>
+								</div>
+							</div>
+							<div class="col-lg-5 col-md-5 col-sm-5 col-xs-12">
+								<p class="text-center">Developed & Designed By - <a href="#">Anita Nair</a></p>
+							</div>
+						</div>
+					</div>
+				</footer>
+				<!-- MOdal Section -->
+				<div class="md-modal md-effect-5" id="modal-5">
+					<div class="md-content">
+						<h3>Excellent Choice..!!</h3>
+						<div>
+							<div class="row">
+								<div class="col-md-6">
+							<div class="col-md-6">
+									<article>Today the company produces about half a million watches a year with a staff of about 470 in total. Rado's watches are obtainable in more than 150 countries, at over 5900 points of sale. The most important markets are Southeast Asia, Japan, China, India, Middle East as well as countries within Europe (Switzerland, Germany, Italy) and the USA.</article>
+									<form class="form-horizontal">
+										<img src="Assests/img/view_watch.gif" width="200" height="250">
+								</div>
+										<div class="form-group" align="center">
+											<label >Quantity</label>
+											<input type="number"/>
+										</div>
+										<div class="form-group">
+											<button class="btn btn-success" id="">Add to Cart</button>
+										</div>
+									</form>
+								</div>
+							</div>
+							<button class="md-close btn btn-danger">Close me!</button>
+						</div>
+					</div>
+				</div>
+				<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel">
+					<div id="login-overlay" class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">X</span><span class="sr-only">Close</span></button>
+								<h4 class="modal-title" id="myModalLabel">Login to watchshop.com</h4>
+							</div>
+							<div class="modal-body">
+								<div class="row">
+									<div class="col-xs-6">
+										<div class="well">
+											<form id="loginForm" method="POST" action="">
+												<div class="form-group">
+													<label for="username" class="control-label">Username</label>
+													<input type="email" class="input_name form-control" id="username" name="username" value="" required="" title="Please enter you username" placeholder="example@gmail.com">
+													<span class="help-block"></span>
+												</div>
+												<div class="form-group">
+													<label for="password" class="control-label">Password</label>
+													<input type="password" class="form-control" id="password" name="password" value="" required="" title="Please enter your password">
+													<span class="help-block"></span>
+												</div>
+												<div id="loginErrorMsg" class="alert alert-error hide">Wrong username or password</div>
+												<div class="checkbox">
+													<label>
+														<input type="checkbox" name="remember" id="remember"> Remember login
+													</label>
+													<p class="help-block">(if this is a private computer)</p>
+												</div>
+												<button type="submit" class="btn btn-success btn-block">Login</button>
+												<a href="/forgot/" class="btn btn-default btn-block">Help to login</a>
+											</form>
+										</div>
+									</div>
+									<div class="col-xs-6">
+										<p class="lead">Register now for <span class="text-success">FREE</span></p>
+										<ul class="list-unstyled" style="line-height: 2">
+											<li><span class="fa fa-check text-success"></span> See all your orders</li>
+											<li><span class="fa fa-check text-success"></span> Fast re-order</li>
+											<li><span class="fa fa-check text-success"></span> Save your favorites</li>
+											<li><span class="fa fa-check text-success"></span> Fast checkout</li>
+											<li><span class="fa fa-check text-success"></span> Get a gift <small>(only new customers)</small></li>
+										</ul>
+										<p><a href="#" data-toggle="modal" data-target="#registerModal" class="btn btn-info btn-block">Yes please, register now!</a></p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="modal fade" id="registerModal" tabindex="-1" role="dialog" aria-labelledby="registerModalLabel">
+					<div id="login-overlay" class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">X</span><span class="sr-only">Close</span></button>
+								<h4 class="modal-title" id="myModalLabel">Register to watchshop.com</h4>
+							</div>
+							<div class="modal-body">
+								<div id="errorBox" style="color:#ff0000"></div>
+								<div id="successBox" style="color:#00c136"></div>
+								<div id="description"></div>
+								<!--container start-->
+								<div id="container">
+									<div id="container_body">
+										<!--Form  start-->
+										<div id="form_name">
+											<form name="form" >
+												<div id="errorBox" style="color:#ff0000"></div>
+												<div id="successBox" style="color:#00c136"></div>
+												<div class="firstnameorlastname form-group">
+													<input type="text" name="Name" value="" placeholder="First Name"  class="input_name form-control" >
+												</div>
+												<div class="form-group">
+													<input type="text" name="LastName" value="" placeholder="Last Name" class="input_name form-control" >
+												</div>
+												<div id="email_form" class="form-group">
+													<input type="text" name="Email" value=""  placeholder="Your Email" class="input_email form-control">
+												</div>
+												<div id="Re_email_form" class="form-group">
+													<input type="text" name="enterEmail" value=""  placeholder="Re-enter Email" class="input_Re_email form-control">
+												</div>
+												<div id="password_form" class="form-group">
+													<input type="password" name="Password" value=""  placeholder="New Password" class="input_password form-control">
+												</div>
+												<div id="radio_button" class="form-group">
+													<input type="radio" name="radiobutton" value="Female">
+													<label >Female</label>
+													&nbsp;&nbsp;&nbsp;
+													<input type="radio" name="radiobutton" value="Male">
+													<label >Male</label>
+												</div>
+												<div class="form-group">
+													<p id="sign_user" onClick="Submit()" class="btn btn-primary">Sign Up </p>
+												</div>
+											</form>
+										</div>
+										<!--form ends-->
+									</div>
+								</div>
+								<!--container ends-->
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- End of Modal Section -->
+				<!-- Latest compiled and minified JavaScript -->
+				<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+				<script src="Assests/js/classie.js"></script>
+				<script src="Assests/js/modalEffects.js"></script>
+				<script src="Assests/Owl/owl.carousel.js"></script>
+				
+					
+					<script type="text/javascript">
+						$(document).ready(function() {
+							$("#owl-demo").owlCarousel({
+								navigation : true,
+								navigationText: [
+								"<i class='icon-chevron-left icon-white'><</i>",
+								"<i class='icon-chevron-right icon-white'>></i>"
+								],
+								slideSpeed : 100,
+								paginationSpeed : 100,
+								singleItem:true,
+								autoPlay:true
+								// "singleItem:true" is a shortcut for:
+								// items : 1, 
+								// itemsDesktop : false,
+								// itemsDesktopSmall : false,
+								// itemsTablet: false,
+								// itemsMobile : false
+							});
+						});
+					</script>
+					<script type="text/javascript">
+						$(function() {
+							$('a[href*=#]:not([href=#])').click(function() {
+								if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+									var target = $(this.hash);
+									target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+									if (target.length) {
+										$('html,body').animate({
+											scrollTop: target.offset().top
+										}, 1000);
+										return false;
+									}
+								}
+							});
+						});
+					</script>
+					<script type="text/javascript">
+						var clicks = 0; $("#addtocart").click(function(){ clicks++; $('.figure').html(clicks);});
+					</script>
+					<script src="Assests/js/validation.js"></script>
+					<!-- On hover dropdown -->
+					<script type="text/javascript">
+						$('ul.nav li.dropdown').hover(function() {
+							$(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn(500);
+						}, function() {
+							$(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(500);
+						});
+					</script>
+					<script src="https://maps.googleapis.com/maps/api/js"></script>
+					<script>
+						function initialize() {
+							var mapCanvas = document.getElementById('map');
+							var mapOptions = {
+								center: new google.maps.LatLng(42.3132, -71.1972),
+								zoom: 8,
+								mapTypeId: google.maps.MapTypeId.ROADMAP
+							}
+							var map = new google.maps.Map(mapCanvas, mapOptions)
+						}
+						google.maps.event.addDomListener(window, 'load', initialize);
+					</script>
+					<script type="text/javascript" src="Assests/Curry/curry.js"></script>
+					<script type="text/javascript">
+						$(function(){ // document ready alias
+						$('#my-element').curry(); // init curry
+					});
+					</script>
+					<script>
+						var displayFlag = 0;
+						function loadDoc() {
+							displayFlag++;
+							var xhttp = new XMLHttpRequest();
+							xhttp.onreadystatechange = function() {
+								if (xhttp.readyState == 4 && xhttp.status ==200) {
+									myFunction(xhttp);
+								}
+							};
+							xhttp.open("GET", "/Anita/store.xml", true);
+							xhttp.send();
+						}
+						function myFunction(xml) {
+							var i;
+							var xmlDoc = xml.responseXML;
+							var table="<tr><th style='width:25%'>SHOPNAME</th><th>LOCATION</th><th>ADDRESS</th><th>CONTACT</th></tr>";
+							var x = xmlDoc.getElementsByTagName("CD");
+							for (i = 0; i <x.length; i++) { 
+								table += "<tr><td>" +
+								x[i].getElementsByTagName("STORENAME")[0].childNodes[0].nodeValue +
+								"</td><td>" +
+								x[i].getElementsByTagName("LOCATION")[0].childNodes[0].nodeValue +
+								"</td><td>" +
+								x[i].getElementsByTagName("ADDRESS")[0].childNodes[0].nodeValue +
+								"</td><td>" +
+								x[i].getElementsByTagName("CONTACT")[0].childNodes[0].nodeValue +
+								"</td></tr>";
+							}
+
+							if (displayFlag % 2 == 1)
+							{
+								document.getElementById("demo").innerHTML = table;
+							}
+							else
+							{
+								document.getElementById("demo").innerHTML = "";
+							}
+						}
+					</script>
+					<script type="text/javascript">
+						$(function(){
+							$('#ff').form({
+								success:function(data){
+									$.messager.alert('Email Alert', data, 'info');
+								}
+							});
+						});
+					</script>
+				</body>
+			</html>
